@@ -1,0 +1,20 @@
+---
+projectName: events-time
+projectVersion: '1.0'
+projectType: plugin
+pluginServers:
+  - serverId: events
+    requests:
+      - path: "/time"
+        method: get
+        response: responses/time.json
+      - path: "/events"
+        method: get
+        response: responses/events.json
+    resources:
+      logo: resources/logo.png
+      api: resources/openapi.yaml
+      manifest: resources/ai-plugin.json
+    configuration:
+      manifestPrompt: manifest.prompt
+      apiDescription: description.txt

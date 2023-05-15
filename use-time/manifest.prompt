@@ -1,0 +1,3 @@
+A plugin that allows a user to query events and then ask which events are within a user specified time range.
+Before answer any question about events, query the current time so that you know which events are within
+the time range that the user is asking for.

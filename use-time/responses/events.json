@@ -1,0 +1,27 @@
+[
+  {
+    "eventName": "Conference on Artificial Intelligence",
+    "startTime": "2023-05-15T09:00Z",
+    "endTime": "2023-05-15T10:30Z"
+  },
+  {
+    "eventName": "Product Launch: Future Tech Gadgets",
+    "startTime": "2023-05-16T13:15Z",
+    "endTime": "2023-05-16T15:00Z"
+  },
+  {
+    "eventName": "Workshop: Web Development Trends",
+    "startTime": "2023-05-17T18:30Z",
+    "endTime": "2023-05-17T20:00Z"
+  },
+  {
+    "eventName": "Startup Pitch Competition",
+    "startTime": "2023-05-18T10:00Z",
+    "endTime": "2023-05-18T11:30Z"
+  },
+  {
+    "eventName": "Music Festival: Sounds of Summer",
+    "startTime": "2023-05-19T14:45Z",
+    "endTime": "2023-05-19T16:00Z"
+  }
+]

@@ -1,0 +1,54 @@
+openapi: 3.0.1
+info:
+  title: Event Plugin
+  description: ${apiDescription}
+  version: 'v1'
+servers:
+  - url: http://localhost:5003
+paths:
+  /time:
+    get:
+      operationId: getTime
+      summary: Get the current time
+      description: Returns the current time in text format (UTC) down to the minute
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  time:
+                    type: string
+                    description: Current time in text format (UTC) down to the minute
+
+  /events:
+    get:
+      operationId: getEvents
+      summary: Get the list of events
+      description: Returns a JSON array of event names within the specified time range
+      parameters:
+        - name: startTime
+          in: query
+          description: Start time of the event range (UTC)
+          required: true
+          schema:
+            type: string
+            format: date-time
+        - name: endTime
+          in: query
+          description: End time of the event range (UTC)
+          required: true
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
