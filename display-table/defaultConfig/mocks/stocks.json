@@ -1,0 +1,42 @@
+[
+  {
+    "stock_id": "1",
+    "ticker": "AAPL",
+    "company_name": "Apple Inc.",
+    "current_price": "150.00",
+    "market_cap": "2.1T",
+    "sector": "Technology"
+  },
+  {
+    "stock_id": "2",
+    "ticker": "MSFT",
+    "company_name": "Microsoft Corporation",
+    "current_price": "250.00",
+    "market_cap": "1.9T",
+    "sector": "Technology"
+  },
+  {
+    "stock_id": "3",
+    "ticker": "AMZN",
+    "company_name": "Amazon.com, Inc.",
+    "current_price": "3300.00",
+    "market_cap": "1.7T",
+    "sector": "Consumer Discretionary"
+  },
+  {
+    "stock_id": "4",
+    "ticker": "GOOGL",
+    "company_name": "Alphabet Inc.",
+    "current_price": "2400.00",
+    "market_cap": "1.5T",
+    "sector": "Communication Services"
+  },
+  {
+    "stock_id": "5",
+    "ticker": "FB",
+    "company_name": "Facebook, Inc.",
+    "current_price": "300.00",
+    "market_cap": "900B",
+    "sector": "Communication Services"
+  }
+]

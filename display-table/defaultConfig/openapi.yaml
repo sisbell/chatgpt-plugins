@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Stock Information API
+  version: 1.0.0
+servers:
+  - url: http://localhost:${port}
+paths:
+  /stocks:
+    get:
+      operationId: getStocks
+      summary: Get stock information
+      responses:
+        '200':
+          description: An array of stock information
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Stock'
+components:
+  schemas:
+    Stock:
+      type: object
+      properties:
+        stock_id:
+          type: string
+          description: The unique identifier for a stock.
+        ticker:
+          type: string
+          description: The stock's ticker symbol.
+        company_name:
+          type: string
+          description: The full name of the company.
+        current_price:
+          type: string
+          description: The current price of the stock.
+        market_cap:
+          type: string
+          description: The market capitalization of the company.
+        sector:
+          type: string
+          description: The sector of the company.
+      required:
+        - stock_id
+        - ticker
+        - company_name
+        - current_price
+        - market_cap
+        - sector

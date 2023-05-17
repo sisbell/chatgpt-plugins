@@ -1,0 +1,4 @@
+A plugin that gives the user stock data. Make sure to display in tabular format.
+Bold the headers. If a stock_id is odd color the row light blue.
+If the stock_id is even, color the row light yellow. If the market cap is
+below 1 trillion then make the market_cap text red.
