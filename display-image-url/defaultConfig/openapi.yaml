@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Image API
+  version: 1.0.0
+  description: An API to get an image URL in PNG format
+servers:
+  - url: http://localhost:${port}
+paths:
+  /image:
+    get:
+      operationId: getImage
+      summary: Get an image URL
+      description: Retrieves an image URL in PNG format
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  imageUrl:
+                    type: string
+                    format: uri
+                    description: URL of the image in PNG format

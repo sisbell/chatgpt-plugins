@@ -1,0 +1,37 @@
+---
+projectName: display-image-url
+projectVersion: '1.0'
+projectType: plugin
+defaultConfig:
+  properties:
+    port: 5003
+    nameForHuman: Get an Image
+    nameForModel: events
+    descriptionForHuman: An API to retrieve the URL of an image file
+
+pluginServers:
+  - serverId: url-image-png
+    mockedRequests:
+      - path: /image
+        method: get
+        mockedResponse: image-url-png.json
+      - path: /assets/195.png
+        method: get
+        mockedResponse: 195.png
+        contentType: image/png
+
+  - serverId: url-image-webp
+    mockedRequests:
+      - path: /image
+        method: get
+        mockedResponse: image-url-webp.json
+      - path: /assets/creature.webp
+        method: get
+        mockedResponse: creature.webp
+        contentType: image/webp
+
+  - serverId: url-image-gif
+    mockedRequests:
+      - path: /image
+        method: get
+        mockedResponse: image-url-gif.json
