@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Image API
+  version: 1.0.0
+  description: An API to retrieve markdown content
+servers:
+  - url: http://localhost:${port}
+paths:
+  /markdown:
+    get:
+      operationId: getMarkdown
+      summary: Get markdown content
+      description: Retrieves markdown content
+      responses:
+        '200':
+          description: Successful response
+          content:
+            text/markdown:
+              schema:
+                type: string
