@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<div style="width: 80%; margin-left: 10%; margin-right: 10%;"><h1>experiment-chain-multiple:1.7</h1>2023-05-14
+    13:30:18.102927
+    <hr/>
+    <h1>BLOCK: chain-1</h1><br>
+    <pre>{<br>  "requestParams": {<br>    "model": "gpt-3.5-turbo",<br>    "temperature": 1.2,<br>    "top_p": 1,<br>    "max_tokens": 500<br>  }<br>}</pre>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">The response will be in JSON Format.<br><br>PREVIOUS SCENE<br><br><br>CHARACTER<br>Role: Commander in
+            Starfleet<br>Main Character Name: <br>If no main character name is given, choose one based on role<br><br>SHOW<br>Star
+            Trek<br><br>CHARACTER ACTION<br><br><br>Write me a story based on the character role.<br>If character name,
+            action and the previous scene are given also use those.<br>Be very descriptive. Write two sentences
+            only.<br><br>RESPONSE<br>The response must only be in JSON using the following structure.<br>Only use these
+            fields. {"mainCharacterName": "", "story": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "mainCharacterName": "Jean-Luc Picard",<br>  "story": "Captain Jean-Luc Picard boldly leads the USS Enterprise on its mission to explor<br>e strange new worlds, seek out new life and new civilizations, and to boldly go <br>where no one has gone before.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">Give me an action for Jean-Luc Picard for the following story:<br>Captain Jean-Luc Picard boldly leads
+            the USS Enterprise on its mission to explore strange new worlds, seek out new life and new civilizations,
+            and to boldly go where no one has gone before.<br><br>The response must be in JSON using the following
+            structure.<br>Only use these fields. {"characterAction": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "characterAction": "Boldly leads the USS Enterprise on its mission to explore strange new worlds, se<br>ek out new life and new civilizations, and to boldly go where no one has gone be<br>fore.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">The response will be in JSON Format.<br><br>PREVIOUS SCENE<br>Captain Jean-Luc Picard boldly leads the
+            USS Enterprise on its mission to explore strange new worlds, seek out new life and new civilizations, and to
+            boldly go where no one has gone before.<br><br>CHARACTER<br>Role: Commander in Starfleet<br>Main Character
+            Name: Jean-Luc Picard<br>If no main character name is given, choose one based on role<br><br>SHOW<br>Star
+            Trek<br><br>CHARACTER ACTION<br>Boldly leads the USS Enterprise on its mission to explore strange new
+            worlds, seek out new life and new civilizations, and to boldly go where no one has gone before.<br><br>Write
+            me a story based on the character role.<br>If character name, action and the previous scene are given also
+            use those.<br>Be very descriptive. Write two sentences only.<br><br>RESPONSE<br>The response must only be in
+            JSON using the following structure.<br>Only use these fields. {"mainCharacterName": "", "story": ""}</td>
+        </tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "mainCharacterName": "Jean-Luc Picard",<br>  "story": "As Captain of the USS Enterprise, Jean-Luc Picard made history by leading his cr<br>ew on countless missions to explore the mysteries of deep space. With his leader<br>ship and courage, they overcame near-impossible obstacles, discovered new worlds<br>, and encountered strange and fascinating alien cultures, always upholding the v<br>alues of Starfleet. Together, they boldly went where no one had gone before.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">Give me an action for Jean-Luc Picard for the following story:<br>As Captain of the USS Enterprise,
+            Jean-Luc Picard made history by leading his crew on countless missions to explore the mysteries of deep
+            space. With his leadership and courage, they overcame near-impossible obstacles, discovered new worlds, and
+            encountered strange and fascinating alien cultures, always upholding the values of Starfleet. Together, they
+            boldly went where no one had gone before.<br><br>The response must be in JSON using the following structure.<br>Only
+            use these fields. {"characterAction": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "characterAction": "Lead his crew on countless missions to explore the mysteries of deep space."<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">The response will be in JSON Format.<br><br>PREVIOUS SCENE<br><br><br>CHARACTER<br>Role: Commander in
+            Starfleet<br>Main Character Name: <br>If no main character name is given, choose one based on role<br><br>SHOW<br>Star
+            Trek<br><br>CHARACTER ACTION<br><br><br>Write me a story based on the character role.<br>If character name,
+            action and the previous scene are given also use those.<br>Be very descriptive. Write two sentences
+            only.<br><br>RESPONSE<br>The response must only be in JSON using the following structure.<br>Only use these
+            fields. {"mainCharacterName": "", "story": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "mainCharacterName": "James T. Kirk",<br>  "story": "Captain James T. Kirk boldly took his seat on the bridge of the USS Enterprise. <br>The hum of the ship's engines gave him a sense of purpose as he prepared to char<br>t a new course through the reaches of space.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">Give me an action for James T. Kirk for the following story:<br>Captain James T. Kirk boldly took his
+            seat on the bridge of the USS Enterprise. The hum of the ship's engines gave him a sense of purpose as he
+            prepared to chart a new course through the reaches of space.<br><br>The response must be in JSON using the
+            following structure.<br>Only use these fields. {"characterAction": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "characterAction": "Took his seat on the bridge"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">The response will be in JSON Format.<br><br>PREVIOUS SCENE<br>Captain James T. Kirk boldly took his seat
+            on the bridge of the USS Enterprise. The hum of the ship's engines gave him a sense of purpose as he
+            prepared to chart a new course through the reaches of space.<br><br>CHARACTER<br>Role: Commander in
+            Starfleet<br>Main Character Name: James T. Kirk<br>If no main character name is given, choose one based on
+            role<br><br>SHOW<br>Star Trek<br><br>CHARACTER ACTION<br>Took his seat on the bridge<br><br>Write me a story
+            based on the character role.<br>If character name, action and the previous scene are given also use
+            those.<br>Be very descriptive. Write two sentences only.<br><br>RESPONSE<br>The response must only be in
+            JSON using the following structure.<br>Only use these fields. {"mainCharacterName": "", "story": ""}</td>
+        </tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "mainCharacterName": "James T. Kirk",<br>  "story": "As Captain James T. Kirk took his seat on the bridge of the USS Enterprise, he c<br>ouldn't help but feel a rush of excitement course through him. It was a feeling <br>he had experienced so many times before, yet it never grew stale - the thrill of<br> exploring uncharted territory and bravely leading his ship and crew into the gr<br>eat unknown.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">Give me an action for James T. Kirk for the following story:<br>As Captain James T. Kirk took his seat on
+            the bridge of the USS Enterprise, he couldn't help but feel a rush of excitement course through him. It was
+            a feeling he had experienced so many times before, yet it never grew stale - the thrill of exploring
+            uncharted territory and bravely leading his ship and crew into the great unknown.<br><br>The response must
+            be in JSON using the following structure.<br>Only use these fields. {"characterAction": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "characterAction": "Grinning with anticipation, Kirk adjusts his communicator and orders the crew to<br> prepare for warp speed.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <h1>BLOCK: chain-2</h1><br>
+    <pre>{<br>  "requestParams": {<br>    "model": "gpt-3.5-turbo",<br>    "temperature": 1.2,<br>    "top_p": 1,<br>    "max_tokens": 500<br>  }<br>}</pre>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">The response will be in JSON Format.<br><br>PREVIOUS SCENE<br><br><br>CHARACTER<br>Role: Commander in
+            Starfleet<br>Main Character Name: <br>If no main character name is given, choose one based on role<br><br>SHOW<br>Babylon
+            5<br><br>CHARACTER ACTION<br><br><br>Write me a story based on the character role.<br>If character name,
+            action and the previous scene are given also use those.<br>Be very descriptive. Write two sentences
+            only.<br><br>RESPONSE<br>The response must only be in JSON using the following structure.<br>Only use these
+            fields. {"mainCharacterName": "", "story": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "mainCharacterName": "John Sheridan",<br>  "story": "Commander John Sheridan, leader of the Earth force, has been tasked to investiga<br>te a mysterious phenomenon that has resulted in multiple lost ships. Upon arriva<br>l, he discovers a shadowy entity perfectly camouflaged in the surrounding rocks.<br> Knowing the risk, he orders for a full-scale attack against the cloaked enemy, <br>forcing its retreat and ending its threat for now.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">Give me an action for John Sheridan for the following story:<br>Commander John Sheridan, leader of the
+            Earth force, has been tasked to investigate a mysterious phenomenon that has resulted in multiple lost
+            ships. Upon arrival, he discovers a shadowy entity perfectly camouflaged in the surrounding rocks. Knowing
+            the risk, he orders for a full-scale attack against the cloaked enemy, forcing its retreat and ending its
+            threat for now.<br><br>The response must be in JSON using the following structure.<br>Only use these fields.
+            {"characterAction": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "characterAction": "Orders a full-scale attack against the cloaked enemy, forcing its retreat"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">The response will be in JSON Format.<br><br>PREVIOUS SCENE<br>Commander John Sheridan, leader of the
+            Earth force, has been tasked to investigate a mysterious phenomenon that has resulted in multiple lost
+            ships. Upon arrival, he discovers a shadowy entity perfectly camouflaged in the surrounding rocks. Knowing
+            the risk, he orders for a full-scale attack against the cloaked enemy, forcing its retreat and ending its
+            threat for now.<br><br>CHARACTER<br>Role: Commander in Starfleet<br>Main Character Name: John Sheridan<br>If
+            no main character name is given, choose one based on role<br><br>SHOW<br>Babylon 5<br><br>CHARACTER
+            ACTION<br>Orders a full-scale attack against the cloaked enemy, forcing its retreat<br><br>Write me a story
+            based on the character role.<br>If character name, action and the previous scene are given also use
+            those.<br>Be very descriptive. Write two sentences only.<br><br>RESPONSE<br>The response must only be in
+            JSON using the following structure.<br>Only use these fields. {"mainCharacterName": "", "story": ""}</td>
+        </tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> structured-story.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "mainCharacterName": "John Sheridan",<br>  "story": "After the successful drive against the werewolf-like creature which had plagued <br>the sectors of the Babylon 5, Captain John Sheridan is once again hailed as a he<br>ro among his comrades. Despite a cloud of doubt hovering above if he really put <br>an end to the menace for good, his decisive action restored balance in the syste<br>m and sparked hope for a better future among many others who look up to him in h<br>igh regard.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #d0e1ff; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>USER</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">Give me an action for John Sheridan for the following story:<br>After the successful drive against the
+            werewolf-like creature which had plagued the sectors of the Babylon 5, Captain John Sheridan is once again
+            hailed as a hero among his comrades. Despite a cloud of doubt hovering above if he really put an end to the
+            menace for good, his decisive action restored balance in the system and sparked hope for a better future
+            among many others who look up to him in high regard.<br><br>The response must be in JSON using the following
+            structure.<br>Only use these fields. {"characterAction": ""}</td></tr>
+    </table>
+    <hr>
+    <table style="background-color: #fff4d0; width: 100%; padding: 20px;">
+        <tr>
+            <td style="padding: 5px;"><h2>ASSISTANT</h2>
+                <h3> character-action.prompt</h3></td>
+        </tr>
+        <tr>
+            <td style="border-top: 1px solid #000; style=" padding: 10px;
+            "">
+            <pre>{<br>  "characterAction": "Accepts the praises and gratitude of his comrades, while reassuring them that th<br>e monster has forsure been defeated, and that they are safer than before.<br>"<br>}</pre>
+            </td></tr>
+    </table>
+    <hr>
+</div>
+</body>
+</html>

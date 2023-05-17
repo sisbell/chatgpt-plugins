@@ -5,6 +5,7 @@ https://github.com/sisbell/stackwire-gpt
 
 | Case              | Description                                                              | Status  |
 |-------------------|--------------------------------------------------------------------------|---------|
+| display-html      | Attempts to display an html page                                         | Failure |
 | display-image-url | Returns a url to ChatGPT and displays image                              | OK      |
 | display-markdown  | Displays markdown in proper format                                       | OK      |
 | display-table     | Displays a formatted table based on structured json                      | Partial |

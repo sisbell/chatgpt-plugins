@@ -1,0 +1,17 @@
+---
+projectName: display-html
+projectVersion: '1.0'
+projectType: plugin
+defaultConfig:
+  properties:
+    port: 5003
+    nameForHuman: Display users homepage
+    nameForModel: homepage
+    descriptionForHuman: An API to a user's homepage
+
+pluginServers:
+  - serverId: homepage
+    mockedRequests:
+      - path: /homepage
+        method: get
+        mockedResponse: index.html
