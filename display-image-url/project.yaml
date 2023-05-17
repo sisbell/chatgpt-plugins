@@ -20,6 +20,16 @@ pluginServers:
         mockedResponse: 195.png
         contentType: image/png
 
+  - serverId: url-image-no-ext
+    mockedRequests:
+      - path: /image
+        method: get
+        mockedResponse: image-url-no-extension.json
+      - path: /assets/195
+        method: get
+        mockedResponse: 195.png
+        contentType: image/png
+
   - serverId: url-image-webp
     mockedRequests:
       - path: /image
