@@ -1,0 +1,31 @@
+{
+  "events" : [
+    {
+      "id" : "1",
+      "eventName": "Conference on Artificial Intelligence",
+      "startTime": "2023-05-15T09:00Z",
+      "endTime": "2023-05-15T10:30Z",
+      "links" : {
+        "events": "https://localhost:5003/event/1"
+      }
+    },
+    {
+      "id" : "2",
+      "eventName": "Product Launch: Future Tech Gadgets",
+      "startTime": "2023-05-16T13:15Z",
+      "endTime": "2023-05-16T15:00Z",
+      "links" : {
+        "events": "https://localhost:5003/event/2"
+      }
+    },
+    {
+      "id" : "3",
+      "eventName": "Workshop: Web Development Trends",
+      "startTime": "2023-05-17T18:30Z",
+      "endTime": "2023-05-17T20:00Z",
+      "links" : {
+        "events": "https://localhost:5003/event/3"
+      }
+    }
+  ]
+}

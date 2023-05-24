@@ -1,0 +1,25 @@
+---
+projectName: hyperlinks
+projectVersion: '1.0'
+projectType: plugin
+defaultConfig:
+  properties:
+    port: 5003
+    nameForHuman: Get External Resources
+    nameForModel: hyperlinks
+    descriptionForHuman: A plugin that gets events
+pluginServers:
+  - serverId: events
+    mockedRequests:
+      - path: /event/1
+        method: get
+        mockedResponse: event.json
+      - path: /event/2
+        method: get
+        mockedResponse: event.json
+      - path: /event/3
+        method: get
+        mockedResponse: event.json
+      - path: /events
+        method: get
+        mockedResponse: events.json

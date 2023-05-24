@@ -1,0 +1,2 @@
+A plugin that allows the user to search for event conferences. The events response will provide a link event that you need to call to
+get the event details. Call that and return the info to user.

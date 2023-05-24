@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info:
+  title: Events API
+  description: A plugin that gets events within a user specified time range.
+  version: 'v1'
+servers:
+  - url: http://localhost:${port}
+paths:
+  /events:
+    get:
+      operationId: getEvents
+      summary: Get all events
+      responses:
+        '200':
+          description: A list of events
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventsResponse'
+components:
+  schemas:
+    Event:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "1"
+        eventName:
+          type: string
+          example: "Conference on Artificial Intelligence"
+        startTime:
+          type: string
+          format: date-time
+          example: "2023-05-15T09:00Z"
+        endTime:
+          type: string
+          format: date-time
+          example: "2023-05-15T10:30Z"
+        links:
+          type: object
+          properties:
+            events:
+              type: string
+              example: "https://localhost:5003/event/1"
+    EventsResponse:
+      type: object
+      properties:
+        events:
+          type: array
+          items:
+            $ref: '#/components/schemas/Event'
