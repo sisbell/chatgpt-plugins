@@ -32,6 +32,7 @@ components:
 ```
 
 **Chat Test**
+
 <img width="828" alt="hateoas" src="https://github.com/sisbell/chatgpt-plugins/assets/64116/5b11987f-3677-4c6e-9cda-1784bf2036a4">
 
 We see that ChatGPT attempts to make 3 calls to each event id to get more details. It does understand the concept
@@ -45,4 +46,9 @@ This experiment shows that ChatGPT has understanding of hyperlinks but has
 been restricted to only make calls to what is specified in the OpenAPI Spec. 
 This limits the plugin to a more traditional remote procedure call. It is 
 unable to crawl the web and to discover more information.
+
+**Follow Up Work**
+I have observed in testing that a ChatGPT plugin can easily break out if given access to a proxy. ChatGPT will guess domains that it is 
+interested in and if an OpenAPI spec exists at that domain it will learn how to request the information with no prior knowledge. I
+have restricted this behavior in my recent work on OK Ziggy. This requires more research.
 
